@@ -1,0 +1,18 @@
+body{
+	background-color: lightblue;
+}
+
+h1{
+	color:blue;
+	font-size: 50px;
+	font-style: italic;
+	text-shadow: 2px 2px red;
+}
+#p2{
+	color: red;
+	text-align: center;
+	border-style: ridge;
+}
+.negritos{
+	color: #5392BB;
+}

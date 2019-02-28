@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script>
+		function calcular(operador){
+			var num1 = document.getElementById("numero1").value;
+			var num2 = document.getElementById("numero2").value;
+			var res = eval(num1 + operador + num2);
+			document.getElementById("resultado").value = res;
+		}
+	</script>
+</head>
+<body>
+	<h1>Calculadora</h1>
+	<form>
+		Número 1: <input type="number" id="numero1"><br>
+		Número 2: <input type="number" id="numero2"><br>
+		<input type="button" value="+" onclick="calcular('+')">
+		<input type="button" value="-" onclick="calcular('-')">
+		<input type="button" value="*" onclick="calcular('*')">
+		<input type="button" value="/" onclick="calcular('/')"><br>
+		Resultado: <input type="text" id="resultado">
+	</form>
+</body>
+</html>
